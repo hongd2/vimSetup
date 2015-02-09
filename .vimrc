@@ -1,5 +1,6 @@
 set nu
 set hlsearch
+colorscheme torte
 set smartcase
 set foldmethod=syntax
 set foldnestmax=10
