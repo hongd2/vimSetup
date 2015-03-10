@@ -14,3 +14,17 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"diff between two current buffers on split
+":windo diffthis and :windo diffoff
+
+
+"diff current buffer and file on disk
+"diff with command :DiffSaved, quit with command :diffoff
+function! s:DiffWithSaved()
+  let filetype=&ft
+  diffthis
+  vnew | r # | normal! 1Gdd
+  diffthis
+  exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
+endfunction
+com! DiffSaved call s:DiffWithSaved()
