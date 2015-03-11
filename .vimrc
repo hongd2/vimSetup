@@ -10,9 +10,12 @@ let g:ConqueTerm_Color=2
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 filetype plugin indent on
-set tabstop=4
-set shiftwidth=4
-set expandtab
+
+"the following will make tab 4 space wide but no convert tab to space
+set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+
+"the following line will convert tab to spaces
+"set expandtab
 
 "diff between two current buffers on split
 ":windo diffthis and :windo diffoff
