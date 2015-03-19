@@ -9,6 +9,7 @@ set foldlevel=1
 let g:ConqueTerm_Color=2
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
+nmap \n :NERDTree <CR>
 filetype plugin indent on
 
 "the following will make tab 4 space wide but no convert tab to space
