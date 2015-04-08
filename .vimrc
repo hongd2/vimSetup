@@ -2,7 +2,7 @@ set nu
 set hlsearch
 colorscheme torte
 set smartcase
-set foldmethod=syntax
+set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
