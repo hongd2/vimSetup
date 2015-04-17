@@ -1,11 +1,13 @@
 set nu
 set hlsearch
 colorscheme torte
+syntax on
 set smartcase
 set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
+set laststatus=2
 let g:ConqueTerm_Color=2
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
@@ -32,3 +34,10 @@ function! s:DiffWithSaved()
   exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
 endfunction
 com! DiffSaved call s:DiffWithSaved()
+
+"to turn off automatic newline to adjust to textwidth :set formatoptions-=tc,
+"for help look at :help formatoptions
+"
+
+"vim airline configuration
+let g:airline_theme = 'powerlineish'

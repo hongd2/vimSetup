@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/quanc/Programming/worksetup'
+let g:netrw_dirhist_2='/projects/fe_lab/users/quanc/GitWorkspace/frontend_alan/Chips/Bcm3390/examples/GLBL'
+let g:netrw_dirhist_3='/projects/fe_lab/users/quanc/GitWorkspace/jinjapractice/FlaskServer/TODO.txt'
+let g:netrw_dirhist_4='/projects/fe_lab/users/quanc/GitWorkspace/jinjapractice/Templates'
