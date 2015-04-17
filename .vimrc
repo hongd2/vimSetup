@@ -41,6 +41,8 @@ com! DiffSaved call s:DiffWithSaved()
 
 "vim airline configuration
 let g:airline_theme = 'powerlineish'
+let g:airline#extentions#hunks#enabled=0
+let g:airline#extentions#branch#enabled=0
 
 "automatic toggle relative line number
 au FocusLost * :set number
