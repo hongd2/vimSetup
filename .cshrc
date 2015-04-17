@@ -37,7 +37,7 @@ setenv LM_LICENSE_FILE `/tools/bin/get_lic_servers synopsys-arc`
 set ARCVER=8.7.0
 #
 #additional path to look up
-setenv PATH $PATH\:/fe_lab/users/accurev/triggers/linux\:/home/quanc/bin\:/tools/bin\:/bin:/usr/bin:/tools/ecos/3.2.1_opt/Linux/opt/ecos/gnutools/mipsisa32-elf/bin
+setenv PATH /home/quanc/vim74/bin\:$PATH\:/fe_lab/users/accurev/triggers/linux\:/home/quanc/bin\:/tools/bin\:/bin:/usr/bin:/tools/ecos/3.2.1_opt/Linux/opt/ecos/gnutools/mipsisa32-elf/bin
 
 # Add these lines to your ~/.cshrc.mine file on the linux grace machines...
 # don't worry too much about what they mean.
