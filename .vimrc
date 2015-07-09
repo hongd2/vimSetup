@@ -1,3 +1,4 @@
+execute pathogen#infect()
 let &runtimepath.='p:\\_vim'
 set nu
 set hlsearch
@@ -49,3 +50,13 @@ au FocusGained * :set relativenumber
 
 "shortcut to delete trailing whitespace
 nnoremap \r :%s/\s\+$//g<CR>
+
+"for syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
