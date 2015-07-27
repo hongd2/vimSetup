@@ -1,5 +1,5 @@
-execute pathogen#infect()
 let &runtimepath.='p:\\_vim'
+execute pathogen#infect()
 set nu
 set hlsearch
 colorscheme torte
@@ -14,6 +14,7 @@ let g:ConqueTerm_Color=2
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 nmap \n :NERDTree <CR>
+nmap \r %s/\s\+$//g <CR>
 filetype plugin indent on
 
 "the following will make tab 4 space wide but no convert tab to space
@@ -49,3 +50,12 @@ let g:airline#extentions#branch#enabled=0
 "automatic toggle relative line number
 au FocusLost * :set number
 au FocusGained * :set relativenumber
+
+"Function to delete trailing spaces
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+noremap <leader>r :call DeleteTrailingWS()<CR>
+
