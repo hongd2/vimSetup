@@ -59,3 +59,6 @@ func! DeleteTrailingWS()
 endfunc
 noremap <leader>r :call DeleteTrailingWS()<CR>
 
+"shortcut for tag bar toggling
+nmap \g :TagbarToggle <CR>
+
