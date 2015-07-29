@@ -74,9 +74,15 @@ let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 "for vim-indent-guide custom color, it won't work with torte colorscheme
 "anyway
 "Keyboard shortcut: \ig
-let g:indent_guides_start_level = 2 
+let g:indent_guides_start_level = 2
 let g:indent_guides_size = 1
 let g:indent_guides_indent_levels = 30
 let g:indent_guides_auto_colors = 1
+
+"shortcut for vim surround
+"Select then add braces: S[
+"Select then add html tag arround: S<div>
+"Delete surrounding braces: ds[
+"Delete the nearest surrounding tag: dst
 
 
