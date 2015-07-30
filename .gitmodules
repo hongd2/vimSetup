@@ -1,0 +1,3 @@
+[submodule ".vim/bundle/python_matchit"]
+	path = .vim/bundle/python_matchit
+	url = https://github.com/lambacck/python_matchit
