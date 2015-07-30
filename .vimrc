@@ -86,3 +86,11 @@ let g:indent_guides_auto_colors = 1
 "Delete the nearest surrounding tag: dst
 
 
+"set the font
+"font is in worksetup/fonts
+if has("win32") || has("win16")
+	set guifont=Source_Code_Pro:h11:cANSI
+else
+	set guifont=Source\ Code\ Pro\ Medium\ 11
+endif
+

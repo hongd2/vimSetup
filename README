@@ -10,3 +10,15 @@
 
         For vim-tagbar plugin on windows, you'll need to add the path to ctags.exe in this repo in your _vimrc files 
         let g:tagbar_ctags_bin = "C:\\<repo path>\\worksetup\\ctags.exe"
+
+		Go to worksetup\fonts\SourceCodePro\OTF, select all files then Install, you'll need Administrator privelege
+
+	1.2 For Vim on Linux:
+		cd ~
+		ln -s <path to repo>/worksetup/.vimrc
+		ln -s <path to repo>/worksetup/.vim
+		mkdir .fonts
+		cd .fonts
+		find <path to repo>/worksetup/fonts/SourceCodePro/TTF -exec ln -s {} \;
+		fc-cache
+
