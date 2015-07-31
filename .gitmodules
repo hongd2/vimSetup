@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/vim-move"]
 	path = .vim/bundle/vim-move
 	url = https://github.com/matze/vim-move
+[submodule ".vim/bundle/vim-wheel"]
+	path = .vim/bundle/vim-wheel
+	url = https://github.com/reedes/vim-wheel

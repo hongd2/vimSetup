@@ -14,6 +14,7 @@ let g:ConqueTerm_Color=2
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 nmap \n :NERDTree <CR>
+"delete trailing white space
 nmap \r %s/\s\+$//g <CR>
 filetype plugin indent on
 
@@ -95,7 +96,10 @@ else
 endif
 
 "add the vertical line to show the tab indentation
-:set list lcs=tab:\|\ 
+:set list lcs=tab:\|\
 
 "to move a code block up and down
 "Alt-j and Alt-k
+
+"to move the screen without moving the cursor
+"Ctrl-j and Ctrl-k
