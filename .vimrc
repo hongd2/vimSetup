@@ -96,3 +96,6 @@ endif
 
 "add the vertical line to show the tab indentation
 :set list lcs=tab:\|\ 
+
+"to move a code block up and down
+"Alt-j and Alt-k
