@@ -28,3 +28,6 @@
 [submodule ".vim/bundle/vim-wheel"]
 	path = .vim/bundle/vim-wheel
 	url = https://github.com/reedes/vim-wheel
+[submodule ".vim/bundle/gitv"]
+	path = .vim/bundle/gitv
+	url = https://github.com/gregsexton/gitv
