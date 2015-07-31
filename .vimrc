@@ -94,3 +94,5 @@ else
 	set guifont=Source\ Code\ Pro\ Medium\ 11
 endif
 
+"add the vertical line to show the tab indentation
+:set list lcs=tab:\|\ 
