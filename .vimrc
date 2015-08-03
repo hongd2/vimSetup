@@ -103,3 +103,11 @@ endif
 
 "to move the screen without moving the cursor
 "Ctrl-j and Ctrl-k
+
+"to convert spaces to tab
+":Retab 4
+:command! -nargs=1 -range Retab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
+
+"to convert spaces to tab
+":set expandtab
+":retab
