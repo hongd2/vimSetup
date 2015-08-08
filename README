@@ -1,15 +1,15 @@
 1. Instructions for vim setup:
-    After cloning this repo, you need to clone the submodule as well, the procedure is described below:
-        - cd into worksetup
-        - git submodule init
-        - git submodule update
+	After cloning this repo, you need to clone the submodule as well, the procedure is described below:
+		- cd into worksetup
+		- git submodule init
+		- git submodule update
 
-    1.1 For Vim on windows:
-        - Copy .vimrc to C:\Program Files (x86)\Vim\_vimrc
-        - Copy .vim to C:\Program Files (x86)\Vim\vimfiles
+	1.1 For Vim on windows:
+		- Copy .vimrc to C:\Program Files (x86)\Vim\_vimrc
+		- Copy .vim to C:\Program Files (x86)\Vim\vimfiles
 
-        For vim-tagbar plugin on windows, you'll need to add the path to ctags.exe in this repo in your _vimrc files 
-        let g:tagbar_ctags_bin = "C:\\<repo path>\\worksetup\\ctags.exe"
+		For vim-tagbar plugin on windows, you'll need to add the path to ctags.exe in this repo in your _vimrc files 
+		let g:tagbar_ctags_bin = "C:\\<repo path>\\worksetup\\ctags.exe"
 
 		Go to worksetup\fonts\SourceCodePro\OTF, select all files then Install, you'll need Administrator privelege
 

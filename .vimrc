@@ -78,7 +78,9 @@ let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 let g:indent_guides_start_level = 2
 let g:indent_guides_size = 1
 let g:indent_guides_indent_levels = 30
-let g:indent_guides_auto_colors = 1
+let g:indent_guides_auto_colors = 0 
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#202020   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#101010 ctermbg=4
 
 "shortcut for vim surround
 "Select then add braces: S[
@@ -96,7 +98,10 @@ else
 endif
 
 "add the vertical line to show the tab indentation
+"\w to turn it on and \q to turn it off
 :set list lcs=tab:\|\ 
+nmap \w :set list <CR>
+nmap \q :set nolist <CR>
 
 "to move a code block up and down
 "Alt-j and Alt-k
@@ -111,3 +116,6 @@ endif
 "to convert spaces to tab
 ":set expandtab
 ":retab
+
+"to search whole word only
+":/\<myWord\>
