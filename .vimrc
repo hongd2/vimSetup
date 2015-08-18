@@ -16,6 +16,8 @@ nmap <CR> o<Esc>
 nmap \n :NERDTree <CR>
 "delete trailing white space
 nmap \r %s/\s\+$//g <CR>
+"cd into the current buffer's location
+nmap \cd :cd %:p:h <CR>
 filetype plugin indent on
 
 "the following will make tab 4 space wide but no convert tab to space
