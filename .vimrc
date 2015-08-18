@@ -78,7 +78,7 @@ let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 "anyway
 "Keyboard shortcut: \ig
 let g:indent_guides_start_level = 2
-let g:indent_guides_size = 1
+let g:indent_guides_guide_size = 1
 let g:indent_guides_indent_levels = 30
 let g:indent_guides_auto_colors = 0 
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#202020   ctermbg=3
