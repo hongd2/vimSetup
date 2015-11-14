@@ -21,7 +21,7 @@ nmap \cd :cd %:p:h <CR>
 filetype plugin indent on
 
 "the following will make tab 4 space wide but no convert tab to space
-set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 "the following line will convert tab to spaces
 "set expandtab
@@ -119,5 +119,15 @@ nmap \q :set nolist <CR>
 ":set expandtab
 ":retab
 
+"to change 2 spaces to 4 spaces or vice versa
+":set shiftwidth=<number>
+"gg=G
+
 "to search whole word only
 ":/\<myWord\>
+
+" set colorcolumn to guide line width
+set colorcolumn=81
+
+" set NERDCommenter to leave a space after # or //
+let g:NERDSpaceDelims = 1
