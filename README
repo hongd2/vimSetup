@@ -14,11 +14,20 @@
 		Go to worksetup\fonts\SourceCodePro\OTF, select all files then Install, you'll need Administrator privelege
 
 	1.2 For Vim on Linux:
-		cd ~
-		ln -s <path to repo>/worksetup/.vimrc
-		ln -s <path to repo>/worksetup/.vim
-		mkdir .fonts
-		cd .fonts
-		find <path to repo>/worksetup/fonts/SourceCodePro/TTF -exec ln -s {} \;
-		fc-cache
+        1.2.1 (Optional) Compile vim from source with gtk header to copy paste from windows to gvim in SSH with X-forwarding
+            sudo apt-get install libgtk-3-dev libgtk2.0-dev
+            wget https://github.com/vim/vim/tarball/master
+            tar -zxvf vim-vim-<some number>.tar.gz
+            cd vim<some number>
+            ./configure                     if you don't have sudo: ./configure --prefix=$HOME/vim74
+            make -j4
+            sudo make install               if you don't have sudo: make install
+        1.2.2 Apply our own custom vimrc and modules
+            cd ~
+            ln -s <path to repo>/worksetup/.vimrc
+            ln -s <path to repo>/worksetup/.vim
+            mkdir .fonts
+            cd .fonts
+            find <path to repo>/worksetup/fonts/SourceCodePro/TTF -exec ln -s {} \;
+            fc-cache
 

@@ -25,10 +25,10 @@ filetype plugin indent on
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 " set shiftwidth = 4 with expandtab
-nmap \4 :set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+nmap \4 :set tabstop=4 softtabstop=4 shiftwidth=4 expandtab<CR>
 
 " set shiftwidth = 2 with expandtab
-nmap \2 :set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+nmap \2 :set tabstop=2 softtabstop=2 shiftwidth=2 expandtab<CR>
 
 "the following line will convert tab to spaces
 "set expandtab
