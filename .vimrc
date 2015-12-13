@@ -13,6 +13,7 @@ set laststatus=2
 let g:ConqueTerm_Color=2
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
+nmap <c-i> i<CR><Esc>
 nmap \n :NERDTree <CR>
 "delete trailing white space
 nmap \r %s/\s\+$//g <CR>
@@ -22,6 +23,12 @@ filetype plugin indent on
 
 "the following will make tab 4 space wide but no convert tab to space
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+
+" set shiftwidth = 4 with expandtab
+nmap \4 :set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+
+" set shiftwidth = 2 with expandtab
+nmap \2 :set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 "the following line will convert tab to spaces
 "set expandtab
@@ -115,7 +122,7 @@ nmap \q :set nolist <CR>
 ":Retab 4
 :command! -nargs=1 -range Retab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
 
-"to convert spaces to tab
+"to convert tab to spaces
 ":set expandtab
 ":retab
 
